@@ -1,35 +1,33 @@
-
-    @font-face {
-        font-family: "glyphicons";
-        src: url("../fonts/glyphicons-halflings-regular.woff") format("woff");
-      }
+/*@font-face {
+    font-family: "glyphicons";
+    src: url("../fonts/glyphicons-halflings-regular.woff") format("woff");
+  } */
+  
     
     body{
-        background-color: white;
-        font-family: "Arial";
+        font-family: "Roboto";
+        
     }
     
     header{
         width: 100%;
-        height: 80px;
+        min-height: 80px;
     }
     .logo{
-        width: 70px;
-        height: 80px;
-        margin: 10px;
+        width: 90px;
+        height: 150px;
         display: inline-block;
-        margin: 30px 0 0 0;
+        margin: 30px 30px 30px 60px ;
         color: black;
       
     
     }
     
     .menu{
-        width: 80%;
-        height: 80px;
-        margin-left: 10%;
-        margin-top: 30px;
         display:flex;
+        height: 150px;
+        width: 100%;
+
     }
     
     .menu .espaco{
@@ -39,19 +37,47 @@
     
     .conteudo{
         display: inline-flex;
-        margin: 30px 0 0 0;
         gap: 60px;
+        height: 25px;
+        margin: 60px 60px ;
     }
 
     .conteudo li{
         display: inline-flex;
-        font-size: 32px;
+        font-size: 26px;
     }
 
     .imagemHome{
+        background-image: url("../image/boloredvelvet.png");
         background-color: aquamarine;
         height:1103px; 
         width: 100%;
+        font-family: "milonga";
+        
+        
+    }
+    .chamadadeacao{
+        color:  white;
+        padding: 60px;
+        text-align: right ;
+        
+        
+    }
+
+    h1{
+        font-size: 64px;
+    }
+    button{
+        font-family: "Roboto";
+        margin-top: 30px;
+        background-color: #48B2CA;
+        border-radius: 30px;
+        color: white;
+        padding: 15px 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 36px;
     }
 
     .sobre{
@@ -67,13 +93,21 @@
         width: 100%;
     
     }
+    .pagina{
+        
+        background-color: red;
+        flex:1 ;
+        height: 450px;
 
+        
+    }
+/*
     .bolo{
         display: inline-block;
         background-color: red;
         height: 450px;
         width: 33,33%;
-        background-position: center center;
+        background-position: center center;  // vertical horizontal
 
     }
     .doces{
@@ -81,7 +115,10 @@
         background-color: blue;
         height: 450px;
         width: 33,33%;
-        justify-content: center;
-        align-items: center;
+        justify-content: center; //horizontalmente da pagina
+        align-items: center; //vertical da pagina
 
     }
+*/
+
+/*flex, 1 obriga a div ocupar o espaco todo entao colocando em todas elas ocupam o maior espaco possivel */
