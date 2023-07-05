@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href = " https://fonts.cdnfonts.com/css/milonga " rel = "stylesheet" >
+    <title>Encomendar</title>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <div class="logo">
+            <a href="index.html"> <img src="image/logogeisecakes.png" alt="Logo Geise Cakes"></a>
+            </div>
+            <div class="espaco"></div>
+            <ul class="conteudo">
+                <li class="1 decoracaomenu"> <a href="index.html"> Home</a></li>
+                <li class="2 decoracaomenu"> <a href="bolos.html"> Bolos</a></li>
+                <li class="3 decoracaomenu"><a href="doces.html">Doces</a></li>
+                <li class="4 decoracaomenu"><a href="kitfesta.html">Kit Festa</a></li>
+                <li class="5 decoracaomenu"><a href="contato.html">Contato</a></li>
+                <li class="6 decoracaomenu"><a href="emcomendar.html">Encomendar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="encomendar">
+        <div class="traco"></div>
+        <h2>Encomende seu bolo</h2>
+        <div class="traco"></div>
+    </div>
+    <div class="orcamento">
+        
+        <h3>1. Escolha o sabor da massa</h3>  
+            <div class="escolha">
+                <div class="alinhamento">
+                    <img class="sabormassa" src="image/massared.png" alt="Massa Bolo Red Velvet" onclick="mostraPreco('precored',5)" >
+                    <h4>Red Velvet</h4>
+                    <h4 class="preco" id="precored">5,00€</h4>
+                </div>
+
+                <div class="alinhamento">
+                    <img class="sabormassa" src="image/massablack.png" alt="Massa Bolo Black" onclick="mostraPreco('precoblack',5)">
+                    <h4>Cacau Black</h4>
+                    <h4 class="preco" id="precoblack">5,00€</h4>
+                </div>
+
+                <div class="alinhamento">
+                    <img class="sabormassa" src="image/massabaunilia.png" alt="Massa Bolo Baunilia" onclick="mostraPreco('precobaunilia',0)">
+                    <h4>Baunilia</h4>
+                    <h4 class="preco" id="precobaunilia">0,00€</h4>
+                </div>
+
+                <div class="alinhamento">
+                    <img class="sabormassa" src="image/massachoc.png" alt="Massa Bolo Chocolate" onclick="mostraPreco('precochocolate',0)">
+                    <h4>Chocolate</h4>
+                    <h4 class="preco" id="precochocolate">0,00€</h4>
+                </div>
+            </div>
+        <h3>2. Escolha o tamanho</h3>
+            <div class="escolha tamanhomassa" >
+
+                <div class="alinhamento">
+                    <img class="tamanhoxs" src="image/massablack.png" alt="tamanho xs"  onclick="mostraPreco('precoxs',5), fazConta()">
+                    <h4>XS</h4>
+                    <h4 class="preco" id="precoxs">25,00€</h4>
+                </div>
+                <div class="alinhamento">
+                    <img class="tamanhos" src="image/massablack.png" alt="tamanho s"  onclick="mostraPreco('precos',5)">
+                    <h4>S</h4>
+                    <h4 class="preco" id="precos">40,00€</h4>
+                </div>
+                <div class="alinhamento">
+                    <img class="tamanhom" src="image/massablack.png" alt="tamanho m"  onclick="mostraPreco('precom',5)">
+                    <h4>M</h4>
+                    <h4 class="preco" id="precom">55,00€</h4>
+                </div>
+                <div class="alinhamento">
+                    <img class="tamanhol" src="image/massablack.png" alt="tamanho l"  onclick="mostraPreco('precol',5)">
+                    <h4>L</h4>
+                    <h4 class="preco" id="precol">75,00€</h4>
+                </div>
+                <div class="alinhamento">
+                    <img class="tamanhoxl" src="image/massablack.png" alt="tamanho xl"  onclick="mostraPreco('precoxl',5)">
+                    <h4>XL</h4>
+                    <h4 class="preco" id="precoxl">95,00€</h4>
+                </div>
+            </div>
+        <div class="resultado" id="resultado">Total:</div>
+
+    </div>
+    
+
+    
+
+    <div class="footer">
+         
+        <div class="contatos"> 
+            <h3>Contatos:</h3> 
+                 <p class="telefone " > <img src="image/calling.png" alt=""> 916 836 372</p>
+                 <p class="email " > <img src="image/envelope-heart.png" alt=""> geisecakes@gmail.com</p>
+                
+        </div> 
+
+        <div class="siga">
+            <h3>Siga-nos em:</h3>
+            <div class="social">
+                <img class="iconsocial" src="image/facebook.png" alt="logo facebook">
+                <img class="iconsocial" src="image/instagram.png" alt="logo instagram">
+            </div>
+        </div>
+    </div>
+    <input type='hidden' name="preco_sabor">
+    <input type='hidden' name="preco_tamanho">
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

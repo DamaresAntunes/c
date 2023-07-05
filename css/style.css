@@ -1,39 +1,59 @@
-/*@font-face {
-    font-family: "glyphicons";
-    src: url("../fonts/glyphicons-halflings-regular.woff") format("woff");
-  } */
+:root{
+    /* Typography - Size */
+   
+    --font-size-h1: 3.25rem; /*52px*/
+    --font-size-h2: 3rem; /*48px*/
+    --font-size-h3: 2.125rem; /*34px*/
+    --font-size-h4: 1.75rem; /*32px*/
+
+
+    --font-size-menu: 1.625rem; /*26px*/
+
+    --font-size-l: 1.875rem; /*30px*/
+    --font-size-m: 1.375rem; /*22px*/
+    --font-size-s: 1rem; /*16px*/
+ 
+}
   
     
     body{
         font-family: "Roboto";
         
     }
+
+    h3{
+        font-size: var(--font-size-h3);
+    }
+
+    h2{
+        font-size: var(--font-size-h2);
+    }
     
     header{
-        width: 100%;
+        
         min-height: 80px;
+        width: 100%;
+        
     }
+
     .logo{
-        width: 90px;
-        height: 150px;
+        
         display: inline-block;
-        margin: 30px 30px 30px 60px ;
-        color: black;
-      
-    
+        height: 85px;
+        margin: 30px 30px 30px 60px;
+        width: 160px;
     }
     
     .menu{
         display:flex;
-        height: 150px;
+        height: 145px;
         width: 100%;
-
     }
     
     .menu .espaco{
         flex: 1;
-        
     }
+
     
     .conteudo{
         display: inline-flex;
@@ -44,15 +64,28 @@
 
     .conteudo li{
         display: inline-flex;
-        font-size: 26px;
+        font-size: var(--font-size-menu);
     }
+
+    .decoracaomenu{
+        color: black;
+        
+    }
+
+    a{
+        color: black;
+        text-decoration: none;
+      
+    }
+
 
     .imagemHome{
         background-image: url("../image/boloredvelvet.png");
-        background-color: aquamarine;
+        background-position: center;
+        font-family: "milonga";
         height:1103px; 
         width: 100%;
-        font-family: "milonga";
+        
         
         
     }
@@ -65,25 +98,47 @@
     }
 
     h1{
-        font-size: 64px;
+        font-size: var(--font-size-h1);
+        font-family: "milonga";
     }
+
     button{
-        font-family: "Roboto";
-        margin-top: 30px;
+        align-items: center;
         background-color: #48B2CA;
         border-radius: 30px;
+        border: 0;
         color: white;
+        display: inline-flex;
+        font-size: var(--font-size-l);
+        gap: 15px;
+        margin-top: 60px;
         padding: 15px 30px;
-        text-align: center;
         text-decoration: none;
-        display: inline-block;
-        font-size: 36px;
+        
+    
+    
+    }
+
+    .seta{
+        text-align: center;
+        height: 30px;
+        width: 30px;
     }
 
     .sobre{
         height: 525px;
         width: 100%;
-        
+        font-size: var(--font-size-h2); 
+        padding-top: 60px;
+        text-align: center;
+    }
+    
+    .h2sobre{
+        font-family: "milonga";
+       
+    }
+    .sobre p{
+        font-size: var(--font-size-m);
     }
 
     .imagens{
@@ -91,34 +146,220 @@
         display: flex;
         height: 450px;
         width: 100%;
+
     
     }
     .pagina{
         
-        background-color: red;
+        
         flex:1 ;
-        height: 450px;
+        font-family: "milonga";
+        font-size: var(--font-size-h1);
+        position: relative;
+        
+        
 
+    }
+
+    .decoracao{
+        align-items: flex-end;
+        color: white;
+        display: flex;
+        font-family: 'milonga';
+        height: 100%;
+        justify-content: center;
+        padding-bottom: 60px;
+        position: relative;
+        text-align: center; 
+        z-index: 1;
+    }
+
+    .bolo{
+        background-image: url("../image/bolo.png");
+        background-size: cover;
+       
+
+    }
+
+    .doces{
+        background-image: url("../image/doces.png");
+        background-size: cover;
+
+    }
+
+    .kitfesta{
+        background-image: url("../image/kitfesta.jpg");
+        background-size: cover;
+
+    }
+
+    .gradiente{
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba( 0, 0, 0, 0));
+        height: 210px;
+        bottom: 0;
+        width: 100%;
+        position: absolute;
+    }
+    
+    .footer{
+        background-color: #48B2CA;
+        display: flex;
+        justify-content: space-between;
+        height: 400px;
+        padding: 60px;
+        width: 100%;
+        
         
     }
-/*
-    .bolo{
-        display: inline-block;
-        background-color: red;
-        height: 450px;
-        width: 33,33%;
-        background-position: center center;  // vertical horizontal
 
+    
+    
+    .telefone{
+        align-items: center;
+        display: flex;
+        font-size: var(--font-size-m);
+        gap: 15px;
+        padding-top: 30px;
     }
-    .doces{
-        display: inline-block;
-        background-color: blue;
-        height: 450px;
-        width: 33,33%;
-        justify-content: center; //horizontalmente da pagina
-        align-items: center; //vertical da pagina
 
+    .email{
+        align-items: center;
+        display: flex;
+        gap: 15px;
+        font-size: var(--font-size-m);
+        padding-top: 15px;
     }
+
+    
+
+    .social{
+        padding-top: 30px;
+        text-align: right;
+        
+    }
+
+    .iconsocial{
+        height: 40px;
+        width: 40px;
+    }
+
+/* fim home*/
+
+/*inico pagina encomendar*/
+.encomendar{
+    font-family: "milonga";
+    padding-top: 60px;
+    text-align: center;
+}
+.orcamento{
+    padding: 60px;
+}
+
+.orcamento h3{
+    font-family: "milonga";
+    font-size: var(--font-size-h3);
+    padding-top: 90px;
+}
+
+.escolha{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 120px;
+}
+
+.alinhamento{
+    font-weight: bold;
+}
+.alinhamento h4{
+    padding-top: 30px;
+    font-weight: 500;
+}
+
+.preco{
+    display: none;
+}
+
+.sabormassa{
+    height: 80px;
+    width: 80px;
+}
+
+.tamanhomassa{
+    align-items: self-end;
+}
+
+
+.tamanhoxs{
+    height: 80px;
+    width: 80px;
+}
+
+.tamanhos{
+    height: 100px;
+    width: 100px;
+}
+.tamanhom{
+    height: 120px;
+    width: 120px;
+}
+
+.tamanhol{
+    height: 140px;
+    width: 140px;
+}
+.tamanhol{
+    height: 160px;
+    width: 160px;
+}
+
+.resultado{
+    padding-top: 60px;
+    font-size: var(--font-size-l);
+}
+
+
+
+/* teste do traço do titulo
+
+.traco{
+    width: 72px;
+    background-color: #000;
+    height: 1px;
+}
+
+
 */
 
+
+
+
+
+
+
+    @media (max-width: 768px) {
+        .imagemHome {
+            background-size: cover;
+            height: 350px;
+        }
+    }
+
+
+
+    /* para fazer o menu mobile
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    flex-direction: column;
+    background: white;
+    margin: 0;
+    padding: 30px;
+    height: 100%;
+    */
+
+    /*
+    justify-content: center; //horizontalmente da pagina
+        align-items: center; //vertical da pagina*/
+
 /*flex, 1 obriga a div ocupar o espaco todo entao colocando em todas elas ocupam o maior espaco possivel */
+/* background-position: center center;  // vertical horizontal */
