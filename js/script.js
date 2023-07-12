@@ -1,13 +1,27 @@
-function mostraPreco(elemento,preco){
-    $('.preco').css('display','none');
-    $('#'+ elemento).css('display','block');
-    $('input[name=preco_sabor]').val(preco);
+function mostraPreco(e,elemento,tipo){
 
-}
+    var p1=  $('input[name=preco_sabor]');
+    var p2=  $('input[name=preco_tamanho]');
 
-function fazConta(){
-    p1= document.querySelector("input[name=preco_sabor]").value;
-    p2= document.querySelector("input[name=preco_tamanho]").value;
+    $(e).siblings().removeClass("selected");
+    if(e.classList.contains("selected")){
+        e.classList.remove("selected");
 
-    $('#resultado').text(p1 * p2);
+    }else{
+        e.classList.add("selected");
+
+    }
+
+    if (tipo == 1){
+      //  $('.e1 .preco').css('display','none');
+        p1.val(parseInt(document.querySelector("#"+elemento).innerHTML));
+    } else {
+      //  $('.e2 .preco').css('display','none');
+        p2.val(parseInt(document.querySelector("#"+elemento).innerHTML));
+    }
+   // $('#'+ elemento).css('display','block');
+
+        
+    $('#resultado').text(parseInt(p1.val()) + parseInt(p2.val()));
+   
 }

@@ -65,6 +65,11 @@
     .conteudo li{
         display: inline-flex;
         font-size: var(--font-size-menu);
+        
+    }
+
+    li a:hover{
+       color: #48B2CA;
     }
 
     .decoracaomenu{
@@ -279,6 +284,10 @@
     display: none;
 }
 
+.alinhamento.selected .preco{
+    display: block;
+}
+
 .sabormassa{
     height: 80px;
     width: 80px;
@@ -307,7 +316,7 @@
     height: 140px;
     width: 140px;
 }
-.tamanhol{
+.tamanhoxl{
     height: 160px;
     width: 160px;
 }
