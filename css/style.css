@@ -1,8 +1,8 @@
 :root{
     /* Typography - Size */
    
-    --font-size-h1: 3.25rem; /*52px*/
-    --font-size-h2: 3rem; /*48px*/
+    --font-size-h1: 3rem; /*48px*/
+    --font-size-h2: 2.5rem; /*40px*/
     --font-size-h3: 2.125rem; /*34px*/
     --font-size-h4: 1.75rem; /*32px*/
 
@@ -281,11 +281,11 @@
 }
 
 .preco{
-    display: none;
+    opacity: 0;
 }
 
 .alinhamento.selected .preco{
-    display: block;
+    opacity: 1;
 }
 
 .sabormassa{
@@ -326,18 +326,21 @@
     font-size: var(--font-size-l);
 }
 
+.recheio{
+    display: flex;
+    justify-content: center;
+}
 
+.recheio .preco{
+    display: inline-block;
+}
 
-/* teste do traço do titulo
-
-.traco{
-    width: 72px;
-    background-color: #000;
-    height: 1px;
+.titulo{
+   align-items: center;
 }
 
 
-*/
+
 
 
 

@@ -9,7 +9,6 @@ function mostraPreco(e,elemento,tipo){
 
     }else{
         e.classList.add("selected");
-
     }
 
     if (tipo == 1){
@@ -23,5 +22,5 @@ function mostraPreco(e,elemento,tipo){
 
         
     $('#resultado').text(parseInt(p1.val()) + parseInt(p2.val()));
-   
+   console.log(document.querySelector("#"+elemento).innerHTML)
 }
