@@ -21,14 +21,21 @@
         
     }
 
-    h3{
-        font-size: var(--font-size-h3);
-    }
-
     h2{
         font-size: var(--font-size-h2);
     }
     
+
+    h3{
+        font-size: var(--font-size-h3);
+    }
+
+    h4{
+        font-size: var(--font-size-h4);
+    }
+    
+
+   
     header{
         
         min-height: 80px;
@@ -272,12 +279,13 @@
     padding-top: 120px;
 }
 
-.alinhamento{
-    font-weight: bold;
+.e1 h4, .e2 h4{
+    text-align: center;
+    font-weight: 900;
 }
+
 .alinhamento h4{
     padding-top: 30px;
-    font-weight: 500;
 }
 
 .preco{
@@ -322,24 +330,66 @@
 }
 
 .resultado{
-    padding-top: 60px;
     font-size: var(--font-size-l);
+    padding-top: 60px;
 }
 
-.recheio{
-    display: flex;
-    justify-content: center;
-}
 
 .recheio .preco{
     display: inline-block;
 }
 
-.titulo{
-   align-items: center;
+h4.titulo{
+   
+   font-family: "Roboto";
+   font-weight: 900;
+   text-align: center;
+   
+}
+
+.obrigatorio{
+    color: red;
+}
+
+.e3{
+    display: flex;
+    flex-direction: column;
+    padding-top: 90px;
+    
+}
+
+.e3 .alinhamento, .e4 .alinhamento{
+    display: flex;
+}
+
+.e3 .alinhamento p:first-of-type, .e4 .alinhamento p:first-of-type{
+    flex: 1;
 }
 
 
+
+.e3 .alinhamento li:first-of-type,.e4 .alinhamento li:first-of-type{
+    padding-top: 60px;
+}
+
+p{
+    font-size: var(--font-size-m);
+    
+}
+
+
+.content{
+   display: flex;
+   justify-content: center;
+   padding-top: 60px;
+}
+
+.bloco{
+    border-radius: 10px;
+    height: 100px;
+    width: 700px;
+    padding-top: 15px;
+} 
 
 
 
