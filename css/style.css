@@ -255,7 +255,74 @@
         width: 40px;
     }
 
-/* fim home*/
+/* *****************************************fim home*************************************************************/
+
+/*inico pagina bolos*/
+
+
+.titulopagina{
+    background-color: #E1F6FA;
+    text-align: center;
+}
+
+.titulopagina h1{
+    padding: 10px 0 10px 0;
+}
+
+
+.card{
+    align-items: center;
+    background-color: antiquewhite;
+    display: flex;
+    height: 495px;
+    justify-content: space-between;
+    padding: 0 60px 0 60px;
+
+}
+
+.card .img{
+    display: inline-block;
+    height: 496px;
+    width: 568px;
+}
+
+.imgredv{
+    background-image:url("../image/boloredv.webp") ;
+    background-size: cover;
+}
+
+
+
+.card .textocard{
+    background-color:rebeccapurple;
+    display: inline-block;
+}
+
+.textocorrido{ 
+    min-height: 60px;
+    padding-top: 30px;
+    width: 540px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *****************************************fim bolos*************************************************************/
 
 /*inico pagina encomendar*/
 .encomendar{
