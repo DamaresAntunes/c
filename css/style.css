@@ -4,12 +4,12 @@
     --font-size-h1: 3rem; /*48px*/
     --font-size-h2: 2.5rem; /*40px*/
     --font-size-h3: 2.125rem; /*34px*/
-    --font-size-h4: 1.75rem; /*32px*/
+    --font-size-h4: 1.75rem; /*28px*/
 
 
     --font-size-menu: 1.625rem; /*26px*/
 
-    --font-size-l: 1.875rem; /*30px*/
+    --font-size-l: 1.5rem; /*24px*/
     --font-size-m: 1.375rem; /*22px*/
     --font-size-s: 1rem; /*16px*/
  
@@ -32,6 +32,7 @@
 
     h4{
         font-size: var(--font-size-h4);
+        font-weight: 900;
     }
     
 
@@ -259,25 +260,31 @@
 
 /*inico pagina bolos*/
 
-
 .titulopagina{
     background-color: #E1F6FA;
+    font-family: "milonga";
+    margin-top: 60px;
     text-align: center;
+   
 }
 
-.titulopagina h1{
-    padding: 10px 0 10px 0;
+.titulopagina h2{
+    padding: 15px 0 15px 0;
 }
 
 
 .card{
     align-items: center;
-    background-color: antiquewhite;
     display: flex;
     height: 495px;
     justify-content: space-between;
+    margin-top: 360px;
     padding: 0 60px 0 60px;
 
+}
+
+.primeirocard{
+    margin-top: 160px;
 }
 
 .card .img{
@@ -287,15 +294,31 @@
 }
 
 .imgredv{
-    background-image:url("../image/boloredv.webp") ;
+    background-image:url("../image/imgredvelvet.webp") ;
+    background-size: cover;
+}
+
+.imgcacau{
+    background-image:url("../image/imgcacaublack.webp") ;
+    background-size: cover;
+}
+
+.imgbaunilia{
+    background-image:url("../image/imgbaunilia.webp") ;
+    background-size: cover;
+}
+
+.imgchocolate{
+    background-image:url("../image/imgchocolate.webp") ;
     background-size: cover;
 }
 
 
 
+
 .card .textocard{
-    background-color:rebeccapurple;
     display: inline-block;
+    font-size: var(--font-size-l);
 }
 
 .textocorrido{ 
@@ -315,29 +338,92 @@
 
 
 
-
-
-
-
-
-
-
 /* *****************************************fim bolos*************************************************************/
+/*inico pagina doces*/
 
-/*inico pagina encomendar*/
-.encomendar{
-    font-family: "milonga";
-    padding-top: 60px;
+
+.imgnido{
+    background-image: url(../image/nido.png);
+    background-size: cover;
+}
+
+.imgbrigadeiro{
+    background-image: url(../image/doces.png);
+    background-size: cover;
+}
+
+.imgbeijinho{
+    background-image: url(../image/beijinho.jpg);
+    background-size: cover;
+}
+
+
+/* *****************************************fim Doces*************************************************************/
+/*inico pagina kit festa*/
+
+.imgkit8{
+    background-image: url(../image/kitfesta.jpg);
+    background-size: cover;
+}
+
+.imgkit15{
+    background-image: url(../image/kitfesta.jpg);
+    background-size: cover;
+}
+
+.imgkit25{
+    background-image: url(../image/kitfesta.jpg);
+    background-size: cover;
+}
+
+
+/* *****************************************fim Kit festa*************************************************************/
+/*inico pagina contato*/
+
+.subtitulo{
+    margin-top: 160px;
     text-align: center;
 }
+
+.horario h3{
+    font-family: "milonga";
+    font-size: var(--font-size-h3);
+    margin-top: 90px;
+}
+
+.card.cardrelogio{
+    height: 300px;
+    margin-top: 90px;
+    
+}
+
+.card .img.imgrelogio{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+
+
+
+/* *****************************************fim contato*************************************************************/
+/*inico pagina encomendar*/
+
 .orcamento{
-    padding: 60px;
+    padding: 160px 60px 60px 60px;
 }
 
 .orcamento h3{
     font-family: "milonga";
     font-size: var(--font-size-h3);
     padding-top: 90px;
+}
+
+.orcamento h3:first-of-type{
+
+    padding-top: 0;
 }
 
 .escolha{
@@ -408,8 +494,6 @@
 
 h4.titulo{
    
-   font-family: "Roboto";
-   font-weight: 900;
    text-align: center;
    
 }
