@@ -6,75 +6,139 @@
     --font-size-h3: 2.125rem; /*34px*/
     --font-size-h4: 1.75rem; /*28px*/
 
-
     --font-size-menu: 1.625rem; /*26px*/
 
     --font-size-l: 1.5rem; /*24px*/
     --font-size-m: 1.375rem; /*22px*/
     --font-size-s: 1rem; /*16px*/
  
+     /* Space - Size */
+
+    --space-s: 30px;
+    --space-m: 60px;
+    --space-l: 90px;
+    --space-xl: 210px;
+  
 }
+
+/* Margin*/
+
+.margin-bottom-s {margin-top: var(--space-s);}
+.margin-bottom-m {margin-top: var(--space-m);}
+.margin-bottom-l {margin-top: var(--space-l);}
+.margin-bottom-xl {margin-top: var(--space-xl);}
+
+
+.margin-left-s {margin-top: var(--space-s);}
+.margin-left-m {margin-top: var(--space-m);}
+.margin-left-l {margin-top: var(--space-l);}
+.margin-left-xl {margin-top: var(--space-xl);}
+
+
+.margin-top-s {margin-top: var(--space-s);}
+.margin-top-m {margin-top: var(--space-m);}
+.margin-top-l {margin-top: var(--space-l);}
+.margin-top-xl {margin-top: var(--space-xl);}
+
+
+.margin-right-s {margin-top: var(--space-s);}
+.margin-right-m {margin-top: var(--space-m);}
+.margin-right-l {margin-top: var(--space-l);}
+.margin-right-xl {margin-top: var(--space-xl);}
+
+
+
+/* Padding*/
+
+
+.padding-bottom-s {margin-top: var(--space-s);}
+.padding-bottom-m {margin-top: var(--space-m);}
+.padding-bottom-l {margin-top: var(--space-l);}
+.padding-bottom-xl {margin-top: var(--space-xl);}
+
+
+.padding-left-s {margin-top: var(--space-s);}
+.padding-left-m {margin-top: var(--space-m);}
+.padding-left-l {margin-top: var(--space-l);}
+.padding-left-xl {margin-top: var(--space-xl);}
+
+
+.padding-top-s {margin-top: var(--space-s);}
+.padding-top-m {margin-top: var(--space-m);}
+.padding-top-l {margin-top: var(--space-l);}
+.padding-top-xl {margin-top: var(--space-xl);}
+
+
+.padding-right-s {margin-top: var(--space-s);}
+.padding-right-m {margin-top: var(--space-m);}
+.padding-right-l {margin-top: var(--space-l);}
+.padding-right-xl {margin-top: var(--space-xl);}
+
+
+.text-align-center {text-align: center;}
+
+
   
     
-    body{
-        font-family: "Roboto";
+body{
+     font-family: "Roboto";
         
-    }
+}
 
-    h2{
+h2{
         font-size: var(--font-size-h2);
-    }
+}
     
 
-    h3{
+h3{
         font-size: var(--font-size-h3);
-    }
+}
 
-    h4{
+h4{
         font-size: var(--font-size-h4);
         font-weight: 900;
-    }
+}
     
 
    
-    header{
+header{
         
-        min-height: 80px;
-        width: 100%;
+    min-height: 80px;
+    width: 100%;
         
-    }
+}
 
-    .logo{
+.logo{
         
-        display: inline-block;
-        height: 85px;
-        margin: 30px 30px 30px 60px;
-        width: 160px;
-    }
+    display: inline-block;
+    height: 85px;
+    margin: 30px 30px 30px 60px;
+    width: 160px;
+}
     
-    .menu{
-        display:flex;
-        height: 145px;
-        width: 100%;
-    }
+.menu{
+    display:flex;
+    height: 145px;
+    width: 100%;
+}
     
-    .menu .espaco{
-        flex: 1;
-    }
+.menu .espaco{
+   flex: 1;
+}
 
     
-    .conteudo{
-        display: inline-flex;
-        gap: 60px;
-        height: 25px;
-        margin: 60px 60px ;
-    }
+.conteudo{
+    display: inline-flex;
+    gap: 60px;
+    height: 25px;
+    margin: var(--space-m) ;
+}
 
-    .conteudo li{
-        display: inline-flex;
-        font-size: var(--font-size-menu);
+.conteudo li{
+    display: inline-flex;
+    font-size: var(--font-size-menu);
         
-    }
+}
 
     li a:hover{
        color: #48B2CA;
@@ -104,7 +168,7 @@
     }
     .chamadadeacao{
         color:  white;
-        padding: 60px;
+        padding: var(--space-m);
         text-align: right ;
         
         
@@ -124,12 +188,13 @@
         display: inline-flex;
         font-size: var(--font-size-l);
         gap: 15px;
-        margin-top: 60px;
         padding: 15px 30px;
         text-decoration: none;
         
-    
-    
+    }
+
+    .edicaobutton{
+        margin-top: var(--space-s);
     }
 
     .seta{
@@ -142,7 +207,7 @@
         height: 525px;
         width: 100%;
         font-size: var(--font-size-h2); 
-        padding-top: 60px;
+        padding-top: var(--space-m);
         text-align: center;
     }
     
@@ -181,7 +246,7 @@
         font-family: 'milonga';
         height: 100%;
         justify-content: center;
-        padding-bottom: 60px;
+        padding-bottom: var(--space-m);
         position: relative;
         text-align: center; 
         z-index: 1;
@@ -219,7 +284,7 @@
         display: flex;
         justify-content: space-between;
         height: 400px;
-        padding: 60px;
+        padding:var(--space-m);
         width: 100%;
         
         
@@ -232,7 +297,7 @@
         display: flex;
         font-size: var(--font-size-m);
         gap: 15px;
-        padding-top: 30px;
+        padding-top: var(--space-m);
     }
 
     .email{
@@ -245,16 +310,16 @@
 
     
 
-    .social{
-        padding-top: 30px;
-        text-align: right;
-        
-    }
+.social{
+    padding-top:var(--space-s);
+    text-align: right;
+            
+}
 
-    .iconsocial{
-        height: 40px;
-        width: 40px;
-    }
+.iconsocial{
+    height: 40px;
+    width: 40px;
+}
 
 /* *****************************************fim home*************************************************************/
 
@@ -263,7 +328,7 @@
 .titulopagina{
     background-color: #E1F6FA;
     font-family: "milonga";
-    margin-top: 60px;
+    margin-top:var(--space-m);
     text-align: center;
    
 }
@@ -276,10 +341,10 @@
 .card{
     align-items: center;
     display: flex;
-    height: 495px;
     justify-content: space-between;
-    margin-top: 360px;
-    padding: 0 60px 0 60px;
+    margin-top: var(--space-xl);
+    padding-left: var(--space-l);
+    padding-right: var(--space-l);
 
 }
 
@@ -289,29 +354,13 @@
 
 .card .img{
     display: inline-block;
-    height: 496px;
-    width: 568px;
 }
 
-.imgredv{
-    background-image:url("../image/imgredvelvet.webp") ;
-    background-size: cover;
+.card .img img{
+    height: 400px;
+    width: 400px;
 }
 
-.imgcacau{
-    background-image:url("../image/imgcacaublack.webp") ;
-    background-size: cover;
-}
-
-.imgbaunilia{
-    background-image:url("../image/imgbaunilia.webp") ;
-    background-size: cover;
-}
-
-.imgchocolate{
-    background-image:url("../image/imgchocolate.webp") ;
-    background-size: cover;
-}
 
 
 
@@ -329,11 +378,9 @@
 
 .button{
     display: flex;
+    cursor:pointer;
     justify-content: center;
 }
-
-
-
 
 
 
