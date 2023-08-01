@@ -4,10 +4,11 @@
     --font-size-h1: 3rem; /*48px*/
     --font-size-h2: 2.5rem; /*40px*/
     --font-size-h3: 2.125rem; /*34px*/
-    --font-size-h4: 1.75rem; /*28px*/
+    --font-size-h4: 1.625rem; /*26px*/
 
     --font-size-menu: 1.625rem; /*26px*/
 
+    --font-size-xl: 1.875rem; /*30px*/
     --font-size-l: 1.5rem; /*24px*/
     --font-size-m: 1.375rem; /*22px*/
     --font-size-s: 1rem; /*16px*/
@@ -17,63 +18,64 @@
     --space-s: 30px;
     --space-m: 60px;
     --space-l: 90px;
-    --space-xl: 210px;
+    --space-xl: 160px;
+    --space-xxl: 210px;
   
 }
 
 /* Margin*/
 
-.margin-bottom-s {margin-top: var(--space-s);}
-.margin-bottom-m {margin-top: var(--space-m);}
-.margin-bottom-l {margin-top: var(--space-l);}
-.margin-bottom-xl {margin-top: var(--space-xl);}
+.margin-bottom-s {margin-bottom: var(--space-s);}
+.margin-bottom-m {margin-bottom: var(--space-m);}
+.margin-bottom-l {margin-bottom: var(--space-l);}
+.margin-bottom-xl {margin-bottom: var(--space-xl);}
+.margin-bottom-xxl {margin-bottom: var(--space-xxl);}
 
-
-.margin-left-s {margin-top: var(--space-s);}
-.margin-left-m {margin-top: var(--space-m);}
-.margin-left-l {margin-top: var(--space-l);}
-.margin-left-xl {margin-top: var(--space-xl);}
-
+.margin-left-s {margin-left: var(--space-s);}
+.margin-left-m {margin-left: var(--space-m);}
+.margin-left-l {margin-left: var(--space-l);}
+.margin-left-xl {margin-left: var(--space-xl);}
+.margin-left-xxl {margin-left: var(--space-xxl);}
 
 .margin-top-s {margin-top: var(--space-s);}
 .margin-top-m {margin-top: var(--space-m);}
 .margin-top-l {margin-top: var(--space-l);}
 .margin-top-xl {margin-top: var(--space-xl);}
+.margin-top-xxl {margin-top: var(--space-xxl);}
 
-
-.margin-right-s {margin-top: var(--space-s);}
-.margin-right-m {margin-top: var(--space-m);}
-.margin-right-l {margin-top: var(--space-l);}
-.margin-right-xl {margin-top: var(--space-xl);}
-
+.margin-right-s {margin-right: var(--space-s);}
+.margin-right-m {margin-right: var(--space-m);}
+.margin-right-l {margin-right: var(--space-l);}
+.margin-right-xl {margin-right: var(--space-xl);}
+.margin-right-xxl {margin-right: var(--space-xxl);}
 
 
 /* Padding*/
 
 
-.padding-bottom-s {margin-top: var(--space-s);}
-.padding-bottom-m {margin-top: var(--space-m);}
-.padding-bottom-l {margin-top: var(--space-l);}
-.padding-bottom-xl {margin-top: var(--space-xl);}
+.padding-bottom-s {padding-bottom: var(--space-s);}
+.padding-bottom-m {padding-bottom: var(--space-m);}
+.padding-bottom-l {padding-bottom: var(--space-l);}
+.padding-bottom-xl {padding-bottom: var(--space-xl);}
+.padding-bottom-xxl {padding-bottom: var(--space-xxl);}
 
+.padding-left-s {padding-left: var(--space-s);}
+.padding-left-m {padding-left: var(--space-m);}
+.padding-left-l {padding-left: var(--space-l);}
+.padding-left-xl {padding-left: var(--space-xl);}
+.padding-left-xxl {padding-left: var(--space-xxl);}
 
-.padding-left-s {margin-top: var(--space-s);}
-.padding-left-m {margin-top: var(--space-m);}
-.padding-left-l {margin-top: var(--space-l);}
-.padding-left-xl {margin-top: var(--space-xl);}
+.padding-top-s {padding-top: var(--space-s);}
+.padding-top-m {padding-top: var(--space-m);}
+.padding-top-l {padding-top: var(--space-l);}
+.padding-top-xl {padding-top: var(--space-xl);}
+.padding-top-xxl {padding-top: var(--space-xxl);}
 
-
-.padding-top-s {margin-top: var(--space-s);}
-.padding-top-m {margin-top: var(--space-m);}
-.padding-top-l {margin-top: var(--space-l);}
-.padding-top-xl {margin-top: var(--space-xl);}
-
-
-.padding-right-s {margin-top: var(--space-s);}
-.padding-right-m {margin-top: var(--space-m);}
-.padding-right-l {margin-top: var(--space-l);}
-.padding-right-xl {margin-top: var(--space-xl);}
-
+.padding-right-s {padding-right: var(--space-s);}
+.padding-right-m {padding-right: var(--space-m);}
+.padding-right-l {padding-right: var(--space-l);}
+.padding-right-xl {padding-right: var(--space-xl);}
+.padding-right-xxl {padding-right: var(--space-xxl);}
 
 .text-align-center {text-align: center;}
 
@@ -182,9 +184,10 @@ header{
     button{
         align-items: center;
         background-color: #48B2CA;
-        border-radius: 30px;
+        border-radius: 20px;
         border: 0;
         color: white;
+        cursor: pointer;
         display: inline-flex;
         font-size: var(--font-size-l);
         gap: 15px;
@@ -204,7 +207,6 @@ header{
     }
 
     .sobre{
-        height: 525px;
         width: 100%;
         font-size: var(--font-size-h2); 
         padding-top: var(--space-m);
@@ -215,8 +217,13 @@ header{
         font-family: "milonga";
        
     }
-    .sobre p{
-        font-size: var(--font-size-m);
+    .paragrafosobre{
+        font-size: var(--font-size-s);
+        text-align: left;
+        padding-left: var(--space-xxl);
+        padding-right: var(--space-xxl);
+        color: #595959;
+
     }
 
     .imagens{
@@ -295,7 +302,6 @@ header{
     .telefone{
         align-items: center;
         display: flex;
-        font-size: var(--font-size-m);
         gap: 15px;
         padding-top: var(--space-m);
     }
@@ -342,14 +348,14 @@ header{
     align-items: center;
     display: flex;
     justify-content: space-between;
-    margin-top: var(--space-xl);
+    margin-top: var(--space-xxl);
     padding-left: var(--space-l);
     padding-right: var(--space-l);
 
 }
 
 .primeirocard{
-    margin-top: 160px;
+    margin-top:var(--space-xl);
 }
 
 .card .img{
@@ -371,15 +377,15 @@ header{
 }
 
 .textocorrido{ 
-    min-height: 60px;
-    padding-top: 30px;
+    min-height: var(--space-m);
+    padding-top: var(--space-s);
     width: 540px;
 }
 
-.button{
+.buttonrestantes{
     display: flex;
-    cursor:pointer;
     justify-content: center;
+    margin-top: var(--space-xl);
 }
 
 
@@ -388,59 +394,44 @@ header{
 /* *****************************************fim bolos*************************************************************/
 /*inico pagina doces*/
 
-
-.imgnido{
-    background-image: url(../image/nido.png);
-    background-size: cover;
-}
-
-.imgbrigadeiro{
-    background-image: url(../image/doces.png);
-    background-size: cover;
-}
-
-.imgbeijinho{
-    background-image: url(../image/beijinho.jpg);
-    background-size: cover;
+.textocorrido li{ 
+    padding-top: 15px;
 }
 
 
 /* *****************************************fim Doces*************************************************************/
 /*inico pagina kit festa*/
 
-.imgkit8{
-    background-image: url(../image/kitfesta.jpg);
-    background-size: cover;
+.textoilustrativo{
+    color: red;
 }
 
-.imgkit15{
-    background-image: url(../image/kitfesta.jpg);
-    background-size: cover;
+.btnenvioform{
+    border-radius: 20px;
 }
 
-.imgkit25{
-    background-image: url(../image/kitfesta.jpg);
-    background-size: cover;
+.buttonform{
+    margin-top: var(--space-l);
+    text-align: center;
 }
-
 
 /* *****************************************fim Kit festa*************************************************************/
 /*inico pagina contato*/
 
 .subtitulo{
-    margin-top: 160px;
+    margin-top:var(--space-xl);
     text-align: center;
 }
 
 .horario h3{
     font-family: "milonga";
     font-size: var(--font-size-h3);
-    margin-top: 90px;
+    margin-top: var(--space-l);
 }
 
 .card.cardrelogio{
-    height: 300px;
-    margin-top: 90px;
+    height: 200px;
+    margin-top: var(--space-l);
     
 }
 
@@ -452,10 +443,85 @@ header{
     
 }
 
+.card .img .relogio{
+    height: 200px;
+    width: 200px;
+}
+
+.textocorridorelogio{
+    min-height: var(--space-m);
+    padding-top: var(--space-s);
+}
+
+.card.cardrelogio{
+    justify-content: center;
+    gap: var(--space-xl);
+}
+
+.contatos.form{
+    background-color: #E1F6FA;
+    height: 380px;
+    margin-top: var(--space-l);
+}
+
+.formcontatos{
+    display: flex;
+    gap: var(--space-xl);
+    justify-content: center;
+    padding-top: var(--space-l);
+}
+
+.contatos h3{
+    font-family: "milonga";
+}
+
+.emailcont{
+    padding-top: var(--space-m);
+}
+
+
+
+
+
+
 
 
 
 /* *****************************************fim contato*************************************************************/
+
+.modal{
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    background-color: red;
+    top: 100px;
+    left: calc(50vw - 250px);
+    
+   
+}
+
+
+.modaloverlay{
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba( 0, 0, 0, 0.2);
+    transition: all 300ms ease;
+
+}
+
+.modaloverlay.open{
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+
+/* *****************************************fim modal*************************************************************/
+
 /*inico pagina encomendar*/
 
 .orcamento{
@@ -465,7 +531,7 @@ header{
 .orcamento h3{
     font-family: "milonga";
     font-size: var(--font-size-h3);
-    padding-top: 90px;
+    padding-top: var(--font-size-l);
 }
 
 .orcamento h3:first-of-type{
@@ -476,7 +542,7 @@ header{
 .escolha{
     display: flex;
     justify-content: space-evenly;
-    padding-top: 120px;
+    padding-top: var(--space-xl);
 }
 
 .e1 h4, .e2 h4{
@@ -485,7 +551,7 @@ header{
 }
 
 .alinhamento h4{
-    padding-top: 30px;
+    padding-top: var(--space-s);
 }
 
 .preco{
@@ -531,7 +597,7 @@ header{
 
 .resultado{
     font-size: var(--font-size-l);
-    padding-top: 60px;
+    padding-top: var(--font-size-m);
 }
 
 
@@ -552,8 +618,11 @@ h4.titulo{
 .e3{
     display: flex;
     flex-direction: column;
-    padding-top: 90px;
+    padding-top: var(--space-l);
     
+}
+.alinhamentomassa{
+    text-align: center
 }
 
 .e3 .alinhamento, .e4 .alinhamento{

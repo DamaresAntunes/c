@@ -27,12 +27,15 @@
         </nav>
     </header>
 
-    <section >
         <div class="titulopagina"> <h2>Kit festa</h2></div>
     
+        <div class="buttonrestantes"> 
+            <button class="btnkit" onclick="openModal();">Encomendar Kit<img class="seta" src="image/Vector.png" alt="icon de seta"></button>
+        </div>
 
             <div class="card primeirocard">
-                <div class="img imgkit8"></div>
+                <div class="img imgkit8"> <img src="image/kit.jpg" alt="Kit Festa"><div class="textoilustrativo">Imagem ilustrativa</div> </div>
+                
                 <div class="textocard">
                         <h4>Kit 8 pessoas</h4>
                         <ul class="textocorrido">
@@ -57,11 +60,11 @@
                         <li>15  Beijinhos</li>
                     </ul>
                 </div>
-                <div class="img imgkit15"></div>
+                <div class="img imgkit15"> <img src="image/kit.jpg" alt="Kit Festa"><div class="textoilustrativo">Imagem ilustrativa</div></div>
             </div>
 
             <div class="card">
-                <div class="img imgkit25"></div>
+                <div class="img imgkit25"><img src="image/kit.jpg" alt="Kit Festa"><div class="textoilustrativo">Imagem ilustrativa</div></div>
                 <div class="textocard">
                     <h4>Kit 25 pessoas</h4>
                     <ul class="textocorrido">
@@ -74,10 +77,24 @@
             </div>
         
         
-            <div class="button"> 
-                <button  onclick="window.location.href = 'encomendar.html'">Encomendar <img class="seta" src="image/Vector.png" alt="icon de seta"></button>
+            <div class="buttonrestantes"> 
+                <button class="btnkit" onclick="openModal();">Encomendar Kit <img class="seta" src="image/Vector.png" alt="icon de seta"></button>
             </div>
 
-        </section>
+            <div class="modaloverlay">
+                <div class="modal"><button onclick="closeModal();">X</button>
+                </div>
+            </div>
+
+
+            <script>
+                function openModal(){
+                    document.querySelector(".modaloverlay").classList.add("open");
+                }
+
+                function closeModal(){
+                    document.querySelector(".modaloverlay").classList.remove("open");
+                }
+            </script>
 </body>
 </html>
