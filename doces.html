@@ -31,19 +31,21 @@
         <div class="titulopagina"> 
             <h2>Doces</h2>
         </div>
+
+        <div class="buttonrestantes"> 
+            <button class="btnkit" onclick="openModal();">Encomendar Kit<img class="seta" src="image/Vector.png" alt="icon de seta"></button>
+        </div>
     
         <div class="card primeirocard">
             <div class="img "><img src="image/nido.png" alt="">
             </div>
             <div class="textocard">
                 <div class="textoh4"><h4>Leite nido</h4></div>
-                <div class="textocorrido">
-                    <p>Caixa de doces com 25 unidades</p>
+                <ul class="textocorrido">
+                    <li>Caixa de doces com 25 unidades</li>
+                    <li>15,00€</li>
+                </ul>
                 </div>
-                <div class="precodoce">15,00€</div>
-                <div class="btn"><button class="margin-top-m" onclick="window.location.href = 'encomendar.html'">Encomendar <img class="seta" src="image/Vector.png" alt="icon de seta"></button>
-                </div>
-
             </div>
         </div>
 
@@ -56,10 +58,8 @@
                         <li>Caixa de doces com 25 unidades</li>
                         <li>18,00€</li>
                     </ul>
-                    <button class="margin-top-m" onclick="window.location.href = 'encomendar.html'">Encomendar <img class="seta" src="image/Vector.png" alt="icon de seta"></button>
-
                 </div>
-                <div class="img "><img src="image/doces.png" alt=""></div>
+                <div class="img "><img src="image/doces.jpg" alt=""></div>
             </div>
 
             <div class="card">
@@ -70,12 +70,28 @@
                         <li>Caixa de doces com 25 unidades</li>
                         <li>15,00€</li>
                     </ul>
-                    <button class="margin-top-m" onclick="window.location.href = 'encomendar.html'">Encomendar <img class="seta" src="image/Vector.png" alt="icon de seta"></button>
+                </div>
+            </div>
 
+            <div class="buttonrestantes"> 
+                <button class="btnkit" onclick="openModal();">Encomendar Kit<img class="seta" src="image/Vector.png" alt="icon de seta"></button>
+            </div>
+
+            <div class="modaloverlay">
+                <div class="modal"><button onclick="closeModal();">X</button>
                 </div>
             </div>
 
 
+            <script>
+                function openModal(){
+                    document.querySelector(".modaloverlay").classList.add("open");
+                }
+
+                function closeModal(){
+                    document.querySelector(".modaloverlay").classList.remove("open");
+                }
+            </script>
 
     </div>
 </body>
