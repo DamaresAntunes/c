@@ -80,6 +80,7 @@
 .padding-right-xxl {padding-right: var(--space-xxl);}
 
 .text-align-center {text-align: center;}
+.display-inlineblock{display: inline-block;}
 
 
   
@@ -530,16 +531,27 @@ header{
 
 
 /* *****************************************fim contato*************************************************************/
+.main-content{
+    padding: var(--space-m) var(--space-s);
+}
 
 .modal{
-    width: 500px;
-    height: 300px;
+    width: 600px;
+    height: 600px;
     position: absolute;
-    background-color: red;
+    background-color: #ffff;
     top: 100px;
     left: calc(50vw - 250px);
-    
    
+}
+
+.buttonclose{
+    border-radius: 0;
+    color: black;
+    background-color: #ffff;
+    position: absolute;
+    right: 0px;
+    
 }
 
 
@@ -560,6 +572,40 @@ header{
     pointer-events: all;
 }
 
+.cl{
+    border-radius: 5px;
+    height: 40px;
+    width: 400px;
+}
+
+.ipt{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+
+}
+
+.pipt{
+    display: inline-block;
+    
+}
+
+   
+.itenscompra{
+    display: flex;
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.escolhacompra{
+    display: flex;
+    gap: 30px;
+}
+
+.formulario{
+    padding-top: var(--space-s);
+}
 
 
 /* *****************************************fim modal*************************************************************/
