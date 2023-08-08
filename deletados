@@ -1,0 +1,18 @@
+<div class="escolhacompra">
+                        <div class="edicaoinput  display-inlineblock"><label><input class="ipt iptescolha" id="Kitfesta" name="iptescolha" type="radio"  value="kitfesta"><p class="pipt"> Kit festa</p></label></div>
+                        <div class="edicaoinput display-inlineblock"><label><input class="ipt iptescolha" id="caixadoces" name="iptescolha" type="radio" value="caixadoces"><p class="pipt"> Caixa de Doces</p></label></div>
+                        <div class="edicaoinput display-inlineblock"><label><input class="ipt iptescolha" id="Kitfesta" name="iptescolha" type="radio" value="kit+caixa"><p class="pipt"> Kit festa + Caixa de Doces</p></label></p></div>
+                    </div>
+                </section>
+                <div class="">
+                    <section class="itenscompra itnkitf">
+                        <div class="edicaoinput"><label><input class="ipt" name="iptkit" type="radio"><p class="pipt">Kit 08 pessoas</p></label></div>
+                        <div class="edicaoinput"><label><input class="ipt" name="iptkit" type="radio"><p class="pipt">Kit 15 pessoas</p></label></div>
+                        <div class="edicaoinput"><label><input class="ipt" name="iptkit" type="radio"><p class="pipt">Kit 25 pessoas</p></label></div>
+                    </section>
+                    <section class="itenscompra intcaixa">
+                        <div class="edicaoinput"><label><input class="ipt" name="iptcaixa" type="radio"><p class="pipt"> Caixa de leite nido</p></label></div>
+                        <div class="edicaoinput"><label><input class="ipt" name="iptcaixa" type="radio"><p class="pipt"> Caixa de brigadeiro</p></label></div>
+                        <div class="edicaoinput"><label><input class="ipt" name="iptcaixa" type="radio"><p class="pipt"> Caixa de beijinho</p></label></div>
+                    </section>
+                </div>

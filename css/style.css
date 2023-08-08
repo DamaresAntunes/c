@@ -4,7 +4,7 @@
     --font-size-h1: 3rem; /*48px*/
     --font-size-h2: 2.5rem; /*40px*/
     --font-size-h3: 2.125rem; /*34px*/
-    --font-size-h4: 1.625rem; /*26px*/
+    --font-size-h4: 1.875rem; /*30px*/
 
     --font-size-menu: 1.625rem; /*26px*/
 
@@ -212,9 +212,9 @@ header{
     }
 
     .sobre{
-        background-color: #E1F6FA;
+        
         font-size: var(--font-size-h2); 
-        padding-top: var(--space-m);
+        padding-top: var(--space-l);
         text-align: center;
         width: 100%;
     }
@@ -246,9 +246,12 @@ header{
         display: flex;
         height: 450px;
         width: 100%;
-
-    
     }
+
+    .imgsobre{
+    filter: drop-shadow(5px 3px 5px #999);
+    }
+
     .pagina{
         
         
@@ -282,7 +285,7 @@ header{
     }
 
     .doces{
-        background-image: url("../image/doces.png");
+        background-image: url("../image/brigadeiro.jpg");
         background-size: cover;
 
     }
@@ -429,7 +432,7 @@ header{
 }
 
 .buttonform{
-    margin-top: var(--space-l);
+    margin-top: var(--space-m);
     text-align: center;
 }
 
@@ -524,6 +527,11 @@ header{
 .onda.topo{
     display: block;
     transform: translateY(1px) scaleY(-1);
+    padding-bottom: var(--space-l);
+}
+
+.ct h4{
+    font-weight: 500;
 }
 
 
@@ -531,13 +539,13 @@ header{
 
 
 /* *****************************************fim contato*************************************************************/
+/*inico pagina modal*/
 .main-content{
-    padding: var(--space-m) var(--space-s);
+    padding-top: var(--space-m) ;
 }
 
 .modal{
     width: 600px;
-    height: 600px;
     position: absolute;
     background-color: #ffff;
     top: 100px;
@@ -601,12 +609,25 @@ header{
 .escolhacompra{
     display: flex;
     gap: 30px;
+    justify-content: center;
+    padding-top: var(--space-xs);
+}
+
+.escolhacompra p{
+    font-size: var(--font-size-s);
 }
 
 .formulario{
     padding-top: var(--space-s);
 }
 
+.areatexto .content{
+    padding-top: var(--space-s);
+}
+
+.content .bloco{
+    width: 400px;
+}
 
 /* *****************************************fim modal*************************************************************/
 
@@ -724,7 +745,7 @@ h4.titulo{
 
 
 .e3 .alinhamento li:first-of-type,.e4 .alinhamento li:first-of-type{
-    padding-top: 60px;
+    padding-top: var(--space-m);
 }
 
 p{
@@ -736,15 +757,21 @@ p{
 .content{
    display: flex;
    justify-content: center;
-   padding-top: 60px;
+   padding-top: var(--space-m);
 }
 
 .bloco{
     border-radius: 10px;
-    height: 100px;
+    height: 80px;
     width: 700px;
-    padding-top: 15px;
+    padding-top: var(--space-xs);
+    text-align: center;
 } 
+
+textarea::placeholder{
+    font-family: "Roboto";
+    padding-top: var(--space-xs);
+}
 
 
 
