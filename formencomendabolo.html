@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="main-content">
-        <h3 class="text-align-center">Faça sua encomenda</h3>
+        <h3 class="text-align-center">Dados pessoais</h3>
         <div class="formulario">
             <form action="envio.php" method="post" class="formuenvio">
                 <section class="text-align-center">
@@ -18,11 +18,7 @@
                     <div class="cl2"> <input class="cl clemail" type="email" placeholder="EMAIL" name="email"></div>
                     <div class="cl3"> <input class="cl clcontato" type="text" placeholder="CONTATO" name="contato"></div>
                 </section>
-                <section >
-                    <h4 class="text-align-center padding-top-s">O que deseja encomendar?</h4>
-                <div class="areatexto">
-                    <div class="content"><textarea class="bloco cltextarea" name="textarea" placeholder="Ex: Kit 8 pessoas + extra de 25 brigadeiro"></textarea></div>
-                </div>
+                
                 
                     <div class="buttonform">
                         <button class="btnenvioform">
@@ -55,27 +51,22 @@
         var field1 = document.querySelector('.clname');
         var field2 = document.querySelector('.clemail');
         var field3 = document.querySelector('.clcontato');
-        var field4 = document.querySelector('.cltextarea');
         
-
         document.querySelector(".formuenvio").addEventListener('submit',function(event){
            
             if (field1.value == "" || field1.value == null) {
-              alert("Obrigatorio"); 
+              alert("Nome brigatorio"); 
               event.preventDefault();
             }
             if (field2.value == "" || field1.value == null) {
-              alert("Obrigatorio"); 
+              alert("Email obrigatorio"); 
               event.preventDefault();
             }
             if (field3.value == "" || field1.value == null) {
-              alert("Obrigatorio"); 
+              alert("Contato obrigatorio"); 
               event.preventDefault();
             }
-            if (field4.value == "" || field1.value == null) {
-              alert("Obrigatorio"); 
-              event.preventDefault();
-            }
+           
             
             document.querySelector(".btnenvioform .txt").style.display="none";
             document.querySelector(".btnenvioform .loader").style.display="block";

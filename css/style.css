@@ -11,7 +11,7 @@
     --font-size-xl: 1.875rem; /*30px*/
     --font-size-l: 1.5rem; /*24px*/
     --font-size-m: 1.375rem; /*22px*/
-    --font-size-s: 1rem; /*16px*/
+    --font-size-s: 1.25rem; /*20px*/
  
      /* Space - Size */
 
@@ -67,6 +67,7 @@
 .padding-left-xl {padding-left: var(--space-xl);}
 .padding-left-xxl {padding-left: var(--space-xxl);}
 
+.padding-top-xs {padding-top: var(--space-xs);}
 .padding-top-s {padding-top: var(--space-s);}
 .padding-top-m {padding-top: var(--space-m);}
 .padding-top-l {padding-top: var(--space-l);}
@@ -166,6 +167,7 @@ header{
     .imagemHome{
         background-image: url("../image/boloredvelvet.png");
         background-position: center;
+        background-size: cover;
         font-family: "milonga";
         height:1103px; 
         width: 100%;
@@ -214,7 +216,7 @@ header{
     .sobre{
         
         font-size: var(--font-size-h2); 
-        padding-top: var(--space-l);
+        padding-top: var(--space-xl);
         text-align: center;
         width: 100%;
     }
@@ -225,10 +227,13 @@ header{
     }
     .paragrafosobre{
         color: #595959;
-        font-size: var(--font-size-s);
         padding-left: var(--space-xl);
-        text-align: left;
+        text-align: justify;
 
+    }
+
+    .paragrafosobre p{
+        font-size: var(--font-size-s);
     }
 
     .conteudosobre{
@@ -242,7 +247,6 @@ header{
 
 
     .imagens{
-        background-color: bisque;
         display: flex;
         height: 450px;
         width: 100%;
@@ -431,6 +435,10 @@ header{
     border-radius: 20px;
 }
 
+.btnenvioform .loader{
+    display: none;
+}
+
 .buttonform{
     margin-top: var(--space-m);
     text-align: center;
@@ -451,7 +459,6 @@ header{
 }
 
 .card.cardrelogio{
-    height: 200px;
     margin-top: var(--space-l);
     
 }
@@ -541,7 +548,7 @@ header{
 /* *****************************************fim contato*************************************************************/
 /*inico pagina modal*/
 .main-content{
-    padding-top: var(--space-m) ;
+    padding-top: var(--space-xl);
 }
 
 .modal{
@@ -629,6 +636,26 @@ header{
     width: 400px;
 }
 
+.loader {
+    width: 25px;
+    height: 25px;
+    border: 5px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    }
+
 /* *****************************************fim modal*************************************************************/
 
 /*inico pagina encomendar*/
@@ -640,7 +667,7 @@ header{
 .orcamento h3{
     font-family: "milonga";
     font-size: var(--font-size-h3);
-    padding-top: var(--font-size-l);
+    padding-top: var(--space-l);
 }
 
 .orcamento h3:first-of-type{
@@ -706,7 +733,7 @@ header{
 
 .resultado{
     font-size: var(--font-size-l);
-    padding-top: var(--font-size-m);
+    padding-top: var(--space-l);
 }
 
 
@@ -722,6 +749,7 @@ h4.titulo{
 
 .obrigatorio{
     color: red;
+    font-size: var(--font-size-s);
 }
 
 .e3{
@@ -773,6 +801,44 @@ textarea::placeholder{
     padding-top: var(--space-xs);
 }
 
+.btnencomendabolo{
+    display: flex;
+    justify-content: center;
+    padding-top: var(--space-l);
+}
+
+
+
+
+
+@media (max-width: 768px){
+
+    :root{
+          /* Typography - Size (tem que trocar os tamanhos) */
+   
+    --font-size-h1: 3rem; /*48px*/
+    --font-size-h2: 2.5rem; /*40px*/
+    --font-size-h3: 2.125rem; /*34px*/
+    --font-size-h4: 1.875rem; /*30px*/
+
+    --font-size-menu: 1.625rem; /*26px*/
+
+    --font-size-xl: 1.875rem; /*30px*/
+    --font-size-l: 1.5rem; /*24px*/
+    --font-size-m: 1.375rem; /*22px*/
+    --font-size-s: 1rem; /*16px*/
+ 
+     /* Space - Size (esta pronto)*/
+
+        --space-xs: 10px;
+        --space-s: 15px;
+        --space-m: 30px;
+        --space-l: 60px;
+        --space-xl: 90px;
+        --space-xxl: 120px;
+    }
+
+}
 
 
 
@@ -785,21 +851,95 @@ textarea::placeholder{
             background-size: cover;
             height: 350px;
         }
+        
+        .card{
+            flex-direction: column;
+        }
+
+        .seta {
+            display: none;
+        }
+
+        .imgsobre img{
+            height: 350px;
+        }
+
+        .conteudosobre{
+            flex-direction: column;
+        }
+
+        .paragrafosobre {
+            padding-left: 0;
+
+        }
+    
+
+       /* .menu{
+            position: absolute;
+        right: 0;
+        top: 0;
+        width: 200px;
+        flex-direction: column;
+        background-color: #48B2CA;
+        margin: 0;
+        padding: 30px;
+        height: 100%;
+        }
+
+        .conteudo{
+            flex-direction: column;
+        }*/
+
+        .imagens {
+            height: 1000px;
+            flex-direction: column;
+
+        }
+
+        .textocorrido {
+
+            width: 350px;
+            text-align: justify;
+            /* padding: var(--space-xs); */
+        }
+
+        .card .img img {
+            height: 350px;
+            width: 350px;
+        }
+
+        /*contato*/
+
+        .teleemail{
+            flex-direction: column;
+            gap: var(--space-m);
+        }
+
+        /*footer*/
+
+        .footer {
+            align-items: center;
+            flex-direction: column;
+            height: 400px;
+            
+        }
+
+        .ct{
+            text-align: center;
+        }
+
+        .social {
+            text-align: center;
+        }
+
+
+        /*encomendar*/
+        .orcamento {
+            padding: 160px 30px 30px 30px;
+        }
     }
 
 
-
-    /* para fazer o menu mobile
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 200px;
-    flex-direction: column;
-    background: white;
-    margin: 0;
-    padding: 30px;
-    height: 100%;
-    */
 
     /*
     justify-content: center; //horizontalmente da pagina

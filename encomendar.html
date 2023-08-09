@@ -88,11 +88,12 @@
 
             
         <h3>3. Escolha o recheio</h3>
+        <p class="obrigatorio padding-top-xs">* Escolha 2 recheios tradicionais ou especiais</p>
             <div class=" e3 recheio" >
-                <p class="obrigatorio">* Escolha 2 recheios</p>
-                <h4 class="titulo">Recheios tradicionais</h4>
+                
+                <h4 class="titulo ">Recheios tradicionais</h4>
 
-                <ul>
+                <ul class="padding-top-m">
                     <li> <div class="alinhamento" onclick="mostraPreco(this,'precobrigadeiro', 3)">
                             <p>Brigadeiro</p>
                             <p class="preco" id="precobrigadeiro">0,00€</p>
@@ -117,9 +118,9 @@
             </div>
 
             <div class=" e3 recheio" >
-                <h4 class="titulo">Recheios especiais</h4>
+                <h4 class="titulo ">Recheios especiais</h4>
 
-                <ul>
+                <ul class="padding-top-m">
                     <li> <div class="alinhamento" onclick="mostraPreco(this,'precobrigadeirocremecheese', 3)">
                             <p>Brigadeiro de creme cheese</p>
                             <p class="preco" id="precobrigadeirocremecheese">2,00€</p>
@@ -148,10 +149,10 @@
             </div>
                 
                 <div class=" e4 recheio" >
-                    <h4 class="titulo">Adicionais aos recheios</h4>
-                    <p class="obrigatorio">* Escolha 1 adicional caso pretenda algum</p>
+                    <h4 class="titulo padding-top-l ">Adicionais aos recheios</h4>
+                    <p class="obrigatorio padding-top-xs">* Escolha 1 adicional caso pretenda algum</p>
     
-                    <ul>
+                    <ul class="padding-top-m">
                         <li> <div class="alinhamento" onclick="mostraPreco(this,'precoabacaxi', 4)">
                                 <p>Abacaxi</p>
                                 <p class="preco" id="precoabacaxi">1,00€</p>
@@ -184,27 +185,18 @@
                     </ul>
                 </div>  
             <h3>4. Escolha o topo do bolo</h3>
-                <div class="e5 topo">
+                <div class="e5 topo padding-top-m">
                     <h4 class="titulo">Indique o topo personalizado que deseja</h4>
                     <div class="content"><textarea class="bloco" placeholder="Feliz Aniversário com balões"></textarea></div>
                 </div>
-            
-
-
-
-
-
-
-
-
-
-
         <div class="resultado" id="resultado">Total:</div>
-    </div>
-    
 
-    
+    </div>       
+        <div class="btnencomendabolo"> 
+            <button class="btnkit" onclick="openModal();">Encomendar<img class="seta" src="image/Vector.png" alt="icon de seta"></button>
+        </div>
 
+        
     <section>
         <div><svg class="onda topo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
                 <path class="elementor-shape-fill" opacity="0.33" d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z"></path>
@@ -237,7 +229,31 @@
             </svg>
         </div>
     </section>
-    </div>
+
+        <div class="modaloverlay">
+            <div class="modal">
+                <button class="buttonclose" onclick="closeModal();">X</button>
+                <iframe src="formencomendabolo.html" height="400" width="600"></iframe> 
+            </div>
+        </div>
+
+        
+
+
+        <script>
+            function openModal(){
+                document.querySelector(".modaloverlay").classList.add("open");
+            }
+
+            function closeModal(){
+                document.querySelector(".modaloverlay").classList.remove("open");
+            }
+        </script>
+    
+    
+
+    
+
     <input type='hidden' name="preco_sabor" value="0">
     <input type='hidden' name="preco_tamanho" value="0">
     <input type='hidden' name="preco_recheio" value="0">
