@@ -11,10 +11,10 @@
 </head>
 <body>
     <header>
-        <nav class="menu">
-            <div class="logo">
+		<div class="logo">
             <a href="index.html"> <img src="image/logogeisecakes.png" alt="Logo Geise Cakes"></a>
-            </div>
+		</div>
+        <nav class="menu">
             <div class="espaco"></div>
             <ul class="conteudo">
                 <li class="1 decoracaomenu"> <a href="index.html"> Home</a></li>
@@ -23,8 +23,12 @@
                 <li class="4 decoracaomenu"><a href="kitfesta.html">Kit Festa</a></li>
                 <li class="5 decoracaomenu"><a href="contato.html">Contato</a></li>
                 <li class="6 decoracaomenu"><a href="encomendar.html">Encomendar</a></li>
+                
             </ul>
+			<button class="buttonclose">X</button>
         </nav>
+		<div class="menu-overlay"></div>
+		<div class="menu-mobile"></div>
     </header>
 
         <div class="titulopagina"> <h2>Kit festa</h2></div>
@@ -49,7 +53,7 @@
             </div>
 
 
-            <div class="card">
+            <div class="card segundocard">
                 
                 <div class="textocard">
                     <h4>Kit 15 pessoas</h4>
@@ -133,5 +137,7 @@
                     document.querySelector(".modaloverlay").classList.remove("open");
                 }
             </script>
+			
+			<script src="js/script.js"></script>
 </body>
 </html>

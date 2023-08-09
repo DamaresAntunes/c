@@ -11,80 +11,102 @@
 </head>
 <body>
     <header>
-        <nav class="menu">
-            <div class="logo">
+		<div class="logo">
             <a href="index.html"> <img src="image/logogeisecakes.png" alt="Logo Geise Cakes"></a>
-            </div>
+		</div>
+        <nav class="menu">
             <div class="espaco"></div>
             <ul class="conteudo">
-                <li class="1 decoracaomenu" > <a href="index.html"> Home</a></li>
+                <li class="1 decoracaomenu"> <a href="index.html"> Home</a></li>
                 <li class="2 decoracaomenu"> <a href="bolos.html"> Bolos</a></li>
                 <li class="3 decoracaomenu"><a href="doces.html">Doces</a></li>
                 <li class="4 decoracaomenu"><a href="kitfesta.html">Kit Festa</a></li>
                 <li class="5 decoracaomenu"><a href="contato.html">Contato</a></li>
                 <li class="6 decoracaomenu"><a href="encomendar.html">Encomendar</a></li>
+                
             </ul>
+			<button class="buttonclose">X</button>
         </nav>
+		<div class="menu-overlay"></div>
+		<div class="menu-mobile"></div>
     </header>
     <div class="titulopagina"> <h2>Encomende seu bolo</h2></div>
     <div class="orcamento">
         
         <h3>1. Escolha o sabor da massa</h3>  
-            <div class="escolha e1">
+            <div class="e1">
+				<ul class="padding-top-m escolha">
+                    <li> 
                 <div class="alinhamento alinhamentomassa" onclick="mostraPreco(this,'precored', 1)">
                     <img class="sabormassa" src="image/massared.png" alt="Massa Bolo Red Velvet"  >
                     <h4>Red Velvet</h4>
-                    <div class="edicaoinput preco display-inlineblock"><input class="ipt" id="Kitfesta" type="radio"><h4  id="precored">5,00€</h4></div>
+                    <div class="edicaoinput preco display-inlineblock"><h4  id="precored">5,00€</h4></div>
                 </div>
-
+				</li>
+				<li>
                 <div class="alinhamento alinhamentomassa" onclick="mostraPreco(this,'precoblack', 1)">
                     <img class="sabormassa" src="image/massablack.png" alt="Massa Bolo Black" >
                     <h4>Cacau Black</h4>
                     <h4 class="preco" id="precoblack">5,00€</h4>
                 </div>
-
+				</li>
+				<li>
                 <div class="alinhamento alinhamentomassa" onclick="mostraPreco(this,'precobaunilia',1)">
                     <img class="sabormassa" src="image/massabaunilia.png" alt="Massa Bolo Baunilia" >
                     <h4>Baunilha</h4>
-                    <h4 class="preco" id="precobaunilia">0,00€</h4>
+                    <h4 class="preco" id="precobaunilia">1,00€</h4>
                 </div>
-
+				</li>
+				<li>
                 <div class="alinhamento alinhamentomassa" onclick="mostraPreco(this,'precochocolate',1)">
                     <img class="sabormassa" src="image/massachoc.png" alt="Massa Bolo Chocolate" >
                     <h4>Chocolate</h4>
-                    <h4 class="preco" id="precochocolate">0,00€</h4>
+                    <h4 class="preco" id="precochocolate">1,00€</h4>
                 </div>
+				</li>
+				</ul>
             </div>
 
         <h3>2. Escolha o tamanho</h3>
-            <div class="escolha e2 tamanhomassa" >
-
+            <div class="e2">
+			<ul class="padding-top-m escolha tamanhomassa">
+				<li>
                 <div class="alinhamento alinhamentomassa" onclick="mostraPreco(this,'precoxs', 2)">
                     <img class="tamanhoxs" src="image/massablack.png" alt="tamanho xs"  >
                     <h4>XS</h4>
                     <h4 class="preco" id="precoxs">25,00€</h4>
                 </div>
+				</li>
+				<li>
                 <div class="alinhamento alinhamentomassa" onclick="mostraPreco(this,'precos',2)">
                     <img class="tamanhos" src="image/massablack.png" alt="tamanho s"  >
                     <h4>S</h4>
                     <h4 class="preco" id="precos">40,00€</h4>
                 </div>
+				</li>
+				<li>
                 <div class="alinhamento alinhamentomassa" onclick="mostraPreco(this,'precom',2)">
                     <img class="tamanhom" src="image/massablack.png" alt="tamanho m"  >
                     <h4>M</h4>
                     <h4 class="preco" id="precom">55,00€</h4>
                 </div>
+				</li>
+				<li>
                 <div class="alinhamento alinhamentomassa" onclick="mostraPreco(this,'precol',2)">
                     <img class="tamanhol" src="image/massablack.png" alt="tamanho l"  >
                     <h4>L</h4>
                     <h4 class="preco" id="precol">75,00€</h4>
                 </div>
+				</li>
+				<li>
                 <div class="alinhamento alinhamentomassa" onclick="mostraPreco(this,'precoxl',2)">
                     <img class="tamanhoxl" src="image/massablack.png" alt="tamanho xl"  >
                     <h4>XL</h4>
                     <h4 class="preco" id="precoxl">95,00€</h4>
                 </div>
-            </div>
+				</li>
+				</ul>
+				</div>
 
             
         <h3>3. Escolha o recheio</h3>
@@ -96,22 +118,22 @@
                 <ul class="padding-top-m">
                     <li> <div class="alinhamento" onclick="mostraPreco(this,'precobrigadeiro', 3)">
                             <p>Brigadeiro</p>
-                            <p class="preco" id="precobrigadeiro">0,00€</p>
+                            <p class="preco" id="precobrigadeiro">1,00€</p>
                         </div> </li>
 
                     <li><div class="alinhamento" onclick="mostraPreco(this,'precobrigdeirobranco',3)">
                         <p>Brigadeiro Branco</p>
-                        <p class="preco" id="precobrigdeirobranco">0,00€</p>
+                        <p class="preco" id="precobrigdeirobranco">1,00€</p>
                     </div> </li>
 
                     <li><div class="alinhamento" onclick="mostraPreco(this,'precocremedecoco',3)">
                         <p>Creme de Coco</p>
-                        <p class="preco" id="precocremedecoco">0,00€</p>
+                        <p class="preco" id="precocremedecoco">1,00€</p>
                     </div> </li>
 
                     <li><div class="alinhamento" onclick="mostraPreco(this,'precodocedeleite',3)">
                         <p>Doce de Leite</p>
-                        <p class="preco" id="precodocedeleite">0,00€</p>
+                        <p class="preco" id="precodocedeleite">1,00€</p>
                     </div></li>
                 </ul>
                 
@@ -189,7 +211,9 @@
                     <h4 class="titulo">Indique o topo personalizado que deseja</h4>
                     <div class="content"><textarea class="bloco" placeholder="Feliz Aniversário com balões"></textarea></div>
                 </div>
-        <div class="resultado" id="resultado">Total:</div>
+		<div class="resultado">
+        <span>Total: </span><span id="resultado"></span>
+		</div>
 
     </div>       
         <div class="btnencomendabolo"> 
@@ -242,7 +266,18 @@
 
         <script>
             function openModal(){
-                document.querySelector(".modaloverlay").classList.add("open");
+				var p1=  $('input[name=preco_sabor]').val();
+				var p2=  $('input[name=preco_tamanho]').val();
+				var p3=  $('input[name=preco_recheio]').val();
+				if (p1 == null || p1 == "" || p1 == 0) {
+					alert('Escolha a Massa');
+				} else if (p2 == null || p2 == "" || p2 == 0) {
+					alert('Escolha o Tamanho');
+				} else if (p3 == null || p3 == "" || p3 == 0) {
+					alert('Escolha o Sabor');
+				} else {
+					document.querySelector(".modaloverlay").classList.add("open");
+				}
             }
 
             function closeModal(){
@@ -259,6 +294,7 @@
     <input type='hidden' name="preco_recheio" value="0">
     <input type='hidden' name="recheio_selecionado" value="0">
     <script src="js/jquery-3.6.4.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/encomendar.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>

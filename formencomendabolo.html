@@ -14,9 +14,9 @@
         <div class="formulario">
             <form action="envio.php" method="post" class="formuenvio">
                 <section class="text-align-center">
-                    <div class="cl1"> <input class="cl clname" type="text" placeholder="NOME" name="name"></div>
-                    <div class="cl2"> <input class="cl clemail" type="email" placeholder="EMAIL" name="email"></div>
-                    <div class="cl3"> <input class="cl clcontato" type="text" placeholder="CONTATO" name="contato"></div>
+                    <div class="cl1 margin-bottom-s"> <input class="cl clname" type="text" placeholder="NOME" name="name"></div>
+                    <div class="cl2 margin-bottom-s"> <input class="cl clemail" type="email" placeholder="EMAIL" name="email"></div>
+                    <div class="cl3 margin-bottom-s"> <input class="cl clcontato" type="number" placeholder="CONTATO" name="contato"></div>
                 </section>
                 
                 
@@ -57,20 +57,17 @@
             if (field1.value == "" || field1.value == null) {
               alert("Nome brigatorio"); 
               event.preventDefault();
-            }
-            if (field2.value == "" || field1.value == null) {
+            } else if (field2.value == "" || field1.value == null) {
               alert("Email obrigatorio"); 
               event.preventDefault();
-            }
-            if (field3.value == "" || field1.value == null) {
+            } else if (field3.value == "" || field1.value == null) {
               alert("Contato obrigatorio"); 
               event.preventDefault();
-            }
-           
-            
-            document.querySelector(".btnenvioform .txt").style.display="none";
-            document.querySelector(".btnenvioform .loader").style.display="block";
-            document.querySelector(".btnenvioform").style.pointerEvents= "none";
+            } else {
+				document.querySelector(".btnenvioform .txt").style.display="none";
+				document.querySelector(".btnenvioform .loader").style.display="block";
+				document.querySelector(".btnenvioform").style.pointerEvents= "none";
+			}
         },false);
      
     </script>
