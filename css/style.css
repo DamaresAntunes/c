@@ -110,7 +110,7 @@ h4{
 
    
 header{
-        
+	display: flex;
     min-height: 80px;
     width: 100%;
         
@@ -132,6 +132,10 @@ header{
     
 .menu .espaco{
    flex: 1;
+}
+
+.menu-overlay {
+	display: none;
 }
 
     
@@ -369,11 +373,13 @@ header{
 .card{
     align-items: center;
     display: flex;
+	gap: 50px;
     justify-content: space-between;
+	margin: 0 auto;
     margin-top: var(--space-xxl);
+	max-width: 950px;
     padding-left: var(--space-l);
     padding-right: var(--space-l);
-
 }
 
 .primeirocard{
@@ -399,12 +405,12 @@ header{
 .card .textocard{
     display: inline-block;
     font-size: var(--font-size-l);
+	padding-top: var(--space-m);
 }
 
 .textocorrido{ 
     min-height: var(--space-m);
     padding-top: var(--space-s);
-    width: 540px;
 }
 
 .buttonrestantes{
@@ -413,6 +419,10 @@ header{
     margin-top: var(--space-xl);
 }
 
+
+.textocorrido {
+	width: 500px;
+}
 
 
 
@@ -535,6 +545,10 @@ header{
     display: block;
     transform: translateY(1px) scaleY(-1);
     padding-bottom: var(--space-l);
+}
+
+.onda{
+	transform: translateY(-2px);
 }
 
 .ct h4{
@@ -673,6 +687,21 @@ header{
 .orcamento h3:first-of-type{
 
     padding-top: 0;
+}
+
+.orcamento .alinhamento {
+	border: 1px solid #fff;
+	border-radius: 10px;
+	padding: 10px;
+	transition: all 200ms ease;
+}
+		
+.orcamento .alinhamento:hover {
+	background-color: #fbfbfb;
+}
+		
+.orcamento .alinhamento.selected {
+	border: 1px solid #ccc;
 }
 
 .escolha{
@@ -836,17 +865,29 @@ textarea::placeholder{
         --space-l: 60px;
         --space-xl: 90px;
         --space-xxl: 120px;
+		
+		
+		/* Encomendar */
+		--image-size-2: 40px;
     }
 
+}
+
+
+.menu .buttonclose {
+	display: none;
 }
 
 
 
 
 
-
-
     @media (max-width: 768px) {
+		
+		.logo{
+			margin: var(--space-m);
+		}
+		
         .imagemHome {
             background-size: cover;
             height: 350px;
@@ -873,22 +914,104 @@ textarea::placeholder{
 
         }
     
-
-       /* .menu{
+		/* Menu */
+       .menu{
             position: absolute;
-        right: 0;
-        top: 0;
-        width: 200px;
-        flex-direction: column;
-        background-color: #48B2CA;
-        margin: 0;
-        padding: 30px;
-        height: 100%;
+			right: 0;
+			top: 0;
+			width: 80%;
+			flex-direction: column;
+			background-color: #48B2CA;
+			margin: 0;
+			height: 100%;
+			z-index: 1;
+			overflow: hidden;
+			transition: all 500ms ease;
+			max-width: 0;
         }
+		
+		body.menu-open {
+			overflow: hidden;
+		}
+		
+		.menu .conteudo {
+			margin-top: var(--space-xl);
+			text-align: center;
+		}
+		
+		.menu .conteudo li {
+			display: inline-block;
+		}
+		
+		.menu-open .menu{
+			max-width: 100%;
+		}
+		
+		.menu-overlay {
+			background-color: #000;
+			bottom: 0;
+			display: block;
+			left: 0;
+			opacity: 0;
+			pointer-events: none;
+			position: absolute;
+			top: 0;
+			transition: all 500ms ease;
+			right: 0;
+		}
+		
+		.menu-open .menu-overlay {
+			opacity: 0.3;
+			pointer-events: all;
+		}
+		
+		.menu .buttonclose {
+			background: transparent;
+			color: #fff;
+			display: block;
+			height: 60px;
+			padding: 0;
+			width: 60px;
+		}
+		
+		.menu-mobile,
+		.menu-mobile:before,
+		.menu-mobile:after {
+			background: #000;
+			height: 4px;
+			position: absolute;
+			width: 30px;
+		}
+		
+		.menu-mobile {
+			right: 20px;
+			top: 70px;
+		}
+		
+		.menu-mobile:before {
+			content: "";
+			top: -9px;
+		}
+		
+		.menu-mobile:after {
+			content: "";
+			top: 9px;
+		}
+		
+		.menu .espaco {
+			display: none;
+		}
+		
+		.menu a {
+			color: #fff;
+			white-space: nowrap;
+		}
 
         .conteudo{
             flex-direction: column;
-        }*/
+			position: relative;
+			z-index: 2;
+        }
 
         .imagens {
             height: 1000px;
@@ -898,7 +1021,6 @@ textarea::placeholder{
 
         .textocorrido {
 
-            width: 350px;
             text-align: justify;
             /* padding: var(--space-xs); */
         }
@@ -907,6 +1029,10 @@ textarea::placeholder{
             height: 350px;
             width: 350px;
         }
+		
+		.segundocard .textocard {
+			order: 2;
+		}
 
         /*contato*/
 
@@ -914,14 +1040,30 @@ textarea::placeholder{
             flex-direction: column;
             gap: var(--space-m);
         }
+		
+		/* Modal */
+		.modal {
+			left: 10px;
+			right: 10px;
+			width: calc(100% - 20px);
+		}
+		
+		.cl {
+			width: 90%;
+		}
+		
+		iframe {
+			margin: 0 20px;
+			width: calc(100% - 40px);
+		}
 
         /*footer*/
 
         .footer {
             align-items: center;
             flex-direction: column;
-            height: 400px;
-            
+            height: auto;
+			gap: var(--space-m);
         }
 
         .ct{
@@ -933,10 +1075,30 @@ textarea::placeholder{
         }
 
 
+		/* Bolos */
+		.textocorrido {
+			width: auto;
+		}
+
         /*encomendar*/
         .orcamento {
             padding: 160px 30px 30px 30px;
         }
+		
+		.orcamento h4 {
+			font-size: 14px;
+		}
+		
+		.sabormassa {
+			height: 45px;
+			width: 45px;
+		}
+		
+		.tamanhoxs {height: var(--image-size-2); width: var(--image-size-2);}
+		.tamanhos {height: calc(var(--image-size-2) + 5px); width: calc(var(--image-size-2) + 5px);}
+		.tamanhom {height: calc(var(--image-size-2) + 10px); width: calc(var(--image-size-2) + 10px);}
+		.tamanhol {height: calc(var(--image-size-2) + 15px); width: calc(var(--image-size-2) + 15px);}
+		.tamanhoxl {height: calc(var(--image-size-2) + 20px); width: calc(var(--image-size-2) + 20px);}
     }
 
 
