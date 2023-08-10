@@ -1,17 +1,17 @@
 :root{
     /* Typography - Size */
    
-    --font-size-h1: 3rem; /*48px*/
-    --font-size-h2: 2.5rem; /*40px*/
-    --font-size-h3: 2.125rem; /*34px*/
-    --font-size-h4: 1.875rem; /*30px*/
+    --font-size-h1: 2.75rem; /*44px*/
+    --font-size-h2: 2.375rem; /*38px*/
+    --font-size-h3: 1.875rem; /*30px*/
+    --font-size-h4: 1.75rem; /*28px*/
 
     --font-size-menu: 1.625rem; /*26px*/
 
     --font-size-xl: 1.875rem; /*30px*/
     --font-size-l: 1.5rem; /*24px*/
-    --font-size-m: 1.375rem; /*22px*/
-    --font-size-s: 1.25rem; /*20px*/
+    --font-size-m: 1.25rem; /*20px*/
+    --font-size-s: 1.125rem; /*18px*/
  
      /* Space - Size */
 
@@ -335,9 +335,9 @@ header{
     .email{
         align-items: center;
         display: flex;
-        gap: 15px;
+        gap: var(--space-xs);
         font-size: var(--font-size-m);
-        padding-top: 15px;
+        padding-top: var(--space-xs);
     }
 
     
@@ -366,7 +366,7 @@ header{
 }
 
 .titulopagina h2{
-    padding: 15px 0 15px 0;
+    padding: var(--space-xs) 0 var(--space-xs) 0;
 }
 
 
@@ -404,7 +404,7 @@ header{
 
 .card .textocard{
     display: inline-block;
-    font-size: var(--font-size-l);
+    font-size: var(--font-size-m);
 	padding-top: var(--space-m);
 }
 
@@ -607,37 +607,6 @@ header{
     width: 400px;
 }
 
-.ipt{
-    display: inline-block;
-    height: 15px;
-    width: 15px;
-
-}
-
-.pipt{
-    display: inline-block;
-    
-}
-
-   
-.itenscompra{
-    display: flex;
-    display: none;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.escolhacompra{
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    padding-top: var(--space-xs);
-}
-
-.escolhacompra p{
-    font-size: var(--font-size-s);
-}
-
 .formulario{
     padding-top: var(--space-s);
 }
@@ -675,7 +644,7 @@ header{
 /*inico pagina encomendar*/
 
 .orcamento{
-    padding: 160px 60px 60px 60px;
+    padding: 160px var(--space-m) var(--space-m) var(--space-m);
 }
 
 .orcamento h3{
@@ -692,7 +661,7 @@ header{
 .orcamento .alinhamento {
 	border: 1px solid #fff;
 	border-radius: 10px;
-	padding: 10px;
+	padding: var(--space-xs);
 	transition: all 200ms ease;
 }
 		
@@ -837,27 +806,32 @@ textarea::placeholder{
 }
 
 
+.menu .buttonclose {
+	display: none;
+}
+
+
 
 
 
 @media (max-width: 768px){
 
     :root{
-          /* Typography - Size (tem que trocar os tamanhos) */
-   
-    --font-size-h1: 3rem; /*48px*/
-    --font-size-h2: 2.5rem; /*40px*/
-    --font-size-h3: 2.125rem; /*34px*/
-    --font-size-h4: 1.875rem; /*30px*/
+          /* Typography - Size */
+
+
+    --font-size-h1: 2.375rem; /*38px*/
+    --font-size-h2:  2rem; /*32px*/
+    --font-size-h3: 1.875rem; /*30px*/
+    --font-size-h4: 1.75rem; /*28px*/
 
     --font-size-menu: 1.625rem; /*26px*/
 
-    --font-size-xl: 1.875rem; /*30px*/
-    --font-size-l: 1.5rem; /*24px*/
-    --font-size-m: 1.375rem; /*22px*/
-    --font-size-s: 1rem; /*16px*/
- 
-     /* Space - Size (esta pronto)*/
+    --font-size-xl: 1.5rem; /*24px*/
+    --font-size-l: 1.25rem; /*20px*/
+    --font-size-m: 1.125rem; /*18px*/
+    --font-size-s: 0.875rem; /*16px*/
+     
 
         --space-xs: 10px;
         --space-s: 15px;
@@ -871,11 +845,6 @@ textarea::placeholder{
 		--image-size-2: 40px;
     }
 
-}
-
-
-.menu .buttonclose {
-	display: none;
 }
 
 
@@ -912,6 +881,10 @@ textarea::placeholder{
         .paragrafosobre {
             padding-left: 0;
 
+        }
+
+        .sobre h2{
+            font-size: var(--font-size-h4);
         }
     
 		/* Menu */
@@ -969,7 +942,7 @@ textarea::placeholder{
 			background: transparent;
 			color: #fff;
 			display: block;
-			height: 60px;
+			height:var(--space-l);
 			padding: 0;
 			width: 60px;
 		}
@@ -1016,13 +989,11 @@ textarea::placeholder{
         .imagens {
             height: 1000px;
             flex-direction: column;
-
         }
 
         .textocorrido {
 
             text-align: justify;
-            /* padding: var(--space-xs); */
         }
 
         .card .img img {
@@ -1035,6 +1006,11 @@ textarea::placeholder{
 		}
 
         /*contato*/
+
+        .card .img .relogio {
+            height: 150px;
+            width: 150px;
+        }
 
         .teleemail{
             flex-direction: column;
@@ -1086,7 +1062,7 @@ textarea::placeholder{
         }
 		
 		.orcamento h4 {
-			font-size: 14px;
+			font-size: var(--space-s);
 		}
 		
 		.sabormassa {
@@ -1101,11 +1077,3 @@ textarea::placeholder{
 		.tamanhoxl {height: calc(var(--image-size-2) + 20px); width: calc(var(--image-size-2) + 20px);}
     }
 
-
-
-    /*
-    justify-content: center; //horizontalmente da pagina
-        align-items: center; //vertical da pagina*/
-
-/*flex, 1 obriga a div ocupar o espaco todo entao colocando em todas elas ocupam o maior espaco possivel */
-/* background-position: center center;  // vertical horizontal */

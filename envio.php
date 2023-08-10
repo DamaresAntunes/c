@@ -21,7 +21,12 @@ $mail->Username = "damaresdejesusantunes@gmail.com"; // servidor de envio
 $mail->Password = "xeuhsbxmctetgiac";
 $mail->SetFrom($_POST["email"]);
 $mail->Subject = "No Subject";
-$mail->Body = $_POST["name"]."<br>".$_POST["email"]."<br>".$_POST["contato"]."<br><br>".$_POST["textarea"] ;
+if (isset($_POST["textarea"])) {
+	$longText = $_POST["textarea"];
+} else {
+	$longText = "";
+}
+$mail->Body = $_POST["name"]."<br>".$_POST["email"]."<br>".$_POST["contato"]."<br><br>".$longText ;
 $mail->AddAddress("damaresdejesusantunes@gmail.com"); // quem vai receber o email
 
 if(!$mail->Send()) {

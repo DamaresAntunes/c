@@ -143,27 +143,27 @@
                 <h4 class="titulo ">Recheios especiais</h4>
 
                 <ul class="padding-top-m">
-                    <li> <div class="alinhamento" onclick="mostraPreco(this,'precobrigadeirocremecheese', 3)">
+                    <li> <div class="alinhamento" onclick="mostraPreco(this,'precobrigadeirocremecheese', 4)">
                             <p>Brigadeiro de creme cheese</p>
                             <p class="preco" id="precobrigadeirocremecheese">2,00€</p>
                         </div> </li>
 
-                    <li><div class="alinhamento" onclick="mostraPreco(this,'precocreme4leites',3)">
+                    <li><div class="alinhamento" onclick="mostraPreco(this,'precocreme4leites',4)">
                         <p>Ceme de 4 leites (leite nido, leite de coco, leite condensado e natas) </p>
                         <p class="preco" id="precocreme4leites">3,00€</p>
                     </div> </li>
 
-                    <li><div class="alinhamento" onclick="mostraPreco(this,'precocremedemorango',3)">
+                    <li><div class="alinhamento" onclick="mostraPreco(this,'precocremedemorango',4)">
                         <p>Creme de morango</p>
                         <p class="preco" id="precocremedemorango">2,00€</p>
                     </div> </li>
 
-                    <li><div class="alinhamento" onclick="mostraPreco(this,'precoganache',3)">
+                    <li><div class="alinhamento" onclick="mostraPreco(this,'precoganache',4)">
                         <p>Ganache</p>
                         <p class="preco" id="precoganache">2,00€</p>
                     </div></li>
 
-                    <li><div class="alinhamento" onclick="mostraPreco(this,'precoleitenido',3)">
+                    <li><div class="alinhamento" onclick="mostraPreco(this,'precoleitenido',4)">
                         <p>Leite nido</p>
                         <p class="preco" id="precoleitenido">2,00€</p>
                     </div></li>
@@ -175,32 +175,32 @@
                     <p class="obrigatorio padding-top-xs">* Escolha 1 adicional caso pretenda algum</p>
     
                     <ul class="padding-top-m">
-                        <li> <div class="alinhamento" onclick="mostraPreco(this,'precoabacaxi', 4)">
+                        <li> <div class="alinhamento" onclick="mostraPreco(this,'precoabacaxi', 5)">
                                 <p>Abacaxi</p>
                                 <p class="preco" id="precoabacaxi">1,00€</p>
                             </div> </li>
     
-                        <li><div class="alinhamento" onclick="mostraPreco(this,'precoameixa',4)">
+                        <li><div class="alinhamento" onclick="mostraPreco(this,'precoameixa',5)">
                             <p>Ameixa </p>
                             <p class="preco" id="precoameixa">1,00€</p>
                         </div> </li>
     
-                        <li><div class="alinhamento" onclick="mostraPreco(this,'precoamendoim',4)">
+                        <li><div class="alinhamento" onclick="mostraPreco(this,'precoamendoim',5)">
                             <p>Castanhas (amendoim, avelãs, nozes...) </p>
                             <p class="preco" id="precoamendoim">3,00€</p>
                         </div> </li>
     
-                        <li><div class="alinhamento" onclick="mostraPreco(this,'precofrutosvermelhos',4)">
+                        <li><div class="alinhamento" onclick="mostraPreco(this,'precofrutosvermelhos',5)">
                             <p>Futos vermelhos</p>
                             <p class="preco" id="precofrutosvermelhos">2,00€</p>
                         </div></li>
     
-                        <li><div class="alinhamento" onclick="mostraPreco(this,'precomorango',4)">
+                        <li><div class="alinhamento" onclick="mostraPreco(this,'precomorango',5)">
                             <p>Morango</p>
                             <p class="preco" id="precomorango">1,00€</p>
                         </div></li>
 
-                        <li><div class="alinhamento" onclick="mostraPreco(this,'preconutella',4)">
+                        <li><div class="alinhamento" onclick="mostraPreco(this,'preconutella',5)">
                             <p>Nutella</p>
                             <p class="preco" id="preconutella">3,00€</p>
                         </div></li>
@@ -209,7 +209,7 @@
             <h3>4. Escolha o topo do bolo</h3>
                 <div class="e5 topo padding-top-m">
                     <h4 class="titulo">Indique o topo personalizado que deseja</h4>
-                    <div class="content"><textarea class="bloco" placeholder="Feliz Aniversário com balões"></textarea></div>
+                    <div class="content"><textarea class="bloco" name="textarea" placeholder="Feliz Aniversário com balões"></textarea></div>
                 </div>
 		<div class="resultado">
         <span>Total: </span><span id="resultado"></span>
@@ -292,6 +292,7 @@
     <input type='hidden' name="preco_sabor" value="0">
     <input type='hidden' name="preco_tamanho" value="0">
     <input type='hidden' name="preco_recheio" value="0">
+    <input type='hidden' name="preco_especial" value="0">
     <input type='hidden' name="recheio_selecionado" value="0">
     <script src="js/jquery-3.6.4.min.js"></script>
     <script src="js/encomendar.js"></script>
